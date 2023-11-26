@@ -5,21 +5,26 @@ export default class Node_2D {
   constructor(item) {
     this.name = 'node_2d'
     this.item = item
-    this.leftNode = null
+
+    this.leftNode = null  // in space
     this.rightNode = null
+    this.upperNode = null
+    this.lowerNode = null
   }
 
-  get previousNode() { return this.leftNode }
+  get previousNode() { return this.leftNode }  // in time
   set previousNode(node) { this.leftNode = node }
 
   get nextNode() { return this.rightNode }
   set nextNode(node) { this.rightNode = node }
 
-  // Returns,
-  //   [o] (item desc) [o]
-  //   [o] (item desc) [>]
-  //   [<] (item desc) [o]
-  //   [<] (item desc) [>]
+  // Returns, (pass
+  // [o] (item desc) [o]
+  // [<] ... [>]
+  // [^] ...
+  // [<^] (item desc) [v>]  // means either one below,
+  // upper up          lower down   direction
+  // north west        south east   location
   toString() {
     const str = []
     if (this.leftNode) { str.push('[<]') }
