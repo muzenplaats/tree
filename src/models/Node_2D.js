@@ -12,11 +12,13 @@ export default class Node_2D {
     this.lowerNode = null
   }
 
+/*
   get previousNode() { return this.leftNode }  // in time
   set previousNode(node) { this.leftNode = node }
 
   get nextNode() { return this.rightNode }
   set nextNode(node) { this.rightNode = node }
+*/
 
   // Returns, (pass
   // [o] (item desc) [o]
