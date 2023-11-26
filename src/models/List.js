@@ -2,7 +2,7 @@
 export default class List {
   constructor(args) {
     this.name = 'list'
-    // this. ...
+    // ...
   }
 
   toString() {}
