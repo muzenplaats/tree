@@ -27,9 +27,12 @@ export default class Node_2D {
   // north west        south east   location
   toString() {
     const str = []
+    // Todo,
+    /*
     if (this.leftNode) { str.push('[<]') }
     str.push('(' + this.item + ')')
     if (this.rightNode) { str.push('[>]') }
+    */
     return str.join(' ')
   }
 
