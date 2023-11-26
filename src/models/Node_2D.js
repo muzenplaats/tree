@@ -26,7 +26,7 @@ export default class Node_2D {
   // [o] (item desc) [o]
   // [<] ... [>]
   // [^] ...
-  // [<^] (item desc) [v>]  // means either one below,
+  // [<^] (item desc) [v>]  // means as below,
   // upper up          lower down   direction
   // north west        south east   location
   toString() {
