@@ -1,7 +1,9 @@
 
 export default class Node_2D {
 
-  // @param item  AnyType
+  /**
+   * @param item  AnyType
+   **/
   constructor(item) {
     this.name = 'node_2d'
     this.item = item
