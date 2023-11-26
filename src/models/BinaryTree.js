@@ -7,6 +7,10 @@ export default class BinaryTree extends {
     // ...
   }
 
+  ballance() {
+    // ...
+  }
+
   toString() {
     // ...
   }
